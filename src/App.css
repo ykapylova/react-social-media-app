@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +39,88 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  height: 50px;
+  align-items: center;
+  background-color: rgba(143, 75, 207, 0.802);
+  color: white;
+  width: 100%;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav div {
+  display: flex;
+  width: 300px;
+}
+
+.menu {
+  justify-content: center;
+  gap: 20px;
+}
+
+.navUserInfo {
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.navUserInfo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navUserInfo button {
+  height: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input, form textarea {
+  margin-bottom: 5px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.post {
+  background-color: rgb(213, 213, 213);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.post * {
+  margin: 5px;
+}
+
+.post .title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.post .description {
+  font-size: 1em;
+}
+
+.post .username {
+  font-size: 0.7em;
 }
